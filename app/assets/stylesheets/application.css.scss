@@ -1,0 +1,125 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+
+$bgimage: url(HogwartsCastle.jpg);
+$studentphoto: url(HPCharacterSprite.jpg);
+$housephoto: url(HogwartsHouses.png);
+$navbarcolor: #29598f;
+
+body {
+
+	table {
+		margin: -5px 20px 5px -5px;
+	}
+
+	td {
+		height: 650px;
+
+		h1, p {
+			padding-left: 30px;
+		}
+
+		h1 {
+			margin-top: 80px;
+		}
+
+		h4 {
+			float: right;
+			margin-top: 450px;
+			margin-right: 50px;
+			font-style: italic;
+		}
+
+	}
+
+	thead {
+		background-color: $navbarcolor;
+		width: 100%;
+		position: fixed;
+
+	}
+
+	th {
+		color: white;
+		height: 60px;
+		width: 200px;
+		text-align: center;
+
+	}
+
+	.top_section {
+		background: $bgimage no-repeat;
+		background-size: cover;
+		background-position: center;
+		margin-top: -20px;
+		color: white;
+		padding: 30px;
+	}
+
+	.harry {
+		width: 100px;
+		height: 100px;
+		margin: 10px;
+		margin-left: 30px;
+		background: $studentphoto 0px 0px no-repeat;
+		float: left;
+	}
+
+	.ron {
+		width: 100px;
+		height: 100px;
+		margin: 10px;
+		background: $studentphoto 0px -100px no-repeat;
+		float: left;
+	}
+
+	.hermione {
+		width: 100px;
+		height: 100px;
+		margin: 10px;
+		background: $studentphoto -500px -200px no-repeat;
+		float: left;
+	}
+
+	.gryffindor {
+		margin-left: 30px;
+		background: $housephoto -14px -14px no-repeat;
+		width: 183px;
+		height: 227px;
+	}
+
+	.hufflepuff {
+		margin-left: 30px;
+		background: $housephoto -15px -249px no-repeat;
+		width: 183px;
+		height: 227px;
+	}
+
+	.ravenclaw {
+		margin-left: 30px;
+		background: $housephoto -200px -13px no-repeat;
+		width: 183px;
+		height: 227px;
+	}
+
+	.slytherin {
+		margin-left: 30px;
+		background: $housephoto -203px -252px no-repeat;
+		width: 183px;
+		height: 227px;
+	}
+
+
+}
+
